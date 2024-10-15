@@ -1,0 +1,43 @@
+name: rhymer
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  auto_route: ^9.2.2
+  cupertino_icons: ^1.0.8
+  dio: ^5.7.0
+  retrofit: ^4.4.1
+  logger: ^2.4.0
+  json_annotation: ^4.9.0
+  flutter_dotenv: ^5.1.0
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  realm: ^20.0.0
+  uuid: ^4.5.1
+  build_runner: ^2.4.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  auto_route_generator: ^9.0.0
+  retrofit_generator: ^9.1.2
+  json_serializable: ^6.8.0
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+
