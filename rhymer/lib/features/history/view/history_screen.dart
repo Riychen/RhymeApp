@@ -34,7 +34,6 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 floating: true,
                 title: Text('История'),
                 elevation: 0,
-                backgroundColor: Colors.white,
                 surfaceTintColor: Colors.transparent,
               ),
               const SliverToBoxAdapter(child: SizedBox(height: 16)),

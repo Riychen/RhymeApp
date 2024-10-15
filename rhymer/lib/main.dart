@@ -5,6 +5,7 @@ import 'package:realm/realm.dart';
 import 'package:rhymer/api/api.dart';
 import 'package:rhymer/bloc/historyRhyme/history_rhymes_bloc.dart';
 import 'package:rhymer/bloc/rhyme/rhyme_bloc.dart';
+import 'package:rhymer/bloc/theme/theme_cubit.dart';
 import 'package:rhymer/repositories/favorites/favorites_repository.dart';
 import 'package:rhymer/repositories/favorites/model/favorite_rhymes.dart';
 import 'package:rhymer/repositories/history/history.dart';
@@ -64,11 +65,17 @@ class _RhymerAppState extends State<RhymerApp> {
               favoritesRepository: favoritesRepository,
             ),
           ),
+          BlocProvider(create: (context) => ThemeCubit()),
         ],
-        child: MaterialApp.router(
-          title: 'Rhymer',
-          theme: themeData,
-          routerConfig: _router.config(),
-        ));
+      child: BlocBuilder<ThemeCubit, ThemeState>(
+        builder: (context, state) {
+          return MaterialApp.router(
+            title: 'Rhymer',
+            theme: state.isDark ? darkTheme : lightTheme,
+            routerConfig: _router.config(),
+          );
+        },
+      ),
+    );
   }
 }

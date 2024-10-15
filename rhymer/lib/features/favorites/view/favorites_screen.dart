@@ -33,7 +33,6 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
             floating: true,
             title: Text('Избранное'),
             elevation: 0,
-            backgroundColor: Colors.white,
             surfaceTintColor: Colors.transparent,
           ),
           const SliverToBoxAdapter(child: SizedBox(height: 16)),

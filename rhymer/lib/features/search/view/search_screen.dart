@@ -38,9 +38,8 @@ class _SearchScreenState extends State<SearchScreen> {
           pinned: true,
           snap: true,
           floating: true,
-          title: const Text('Rhymer'),
+          title: const Text('Поиск'),
           elevation: 0,
-          backgroundColor: Colors.white,
           surfaceTintColor: Colors.transparent,
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(60),
