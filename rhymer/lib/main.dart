@@ -21,7 +21,6 @@ Future<void> main() async {
   runApp(RhymerApp(
     realm: realm,
   ));
-  print('прилоджение запущено');
 }
 
 class RhymerApp extends StatefulWidget {
