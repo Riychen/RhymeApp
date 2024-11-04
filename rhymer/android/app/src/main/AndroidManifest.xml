@@ -2,9 +2,10 @@
     <application
         android:label="rhymer"
 
-        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:usesNonSdkApi="true">
+        android:usesNonSdkApi="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"

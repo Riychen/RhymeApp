@@ -40,7 +40,7 @@ class _SearchScreenState extends State<SearchScreen> {
           floating: true,
           title: const Text('Поиск'),
           elevation: 0,
-          surfaceTintColor: Colors.transparent,
+          // surfaceTintColor: Colors.transparent,
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(60),
             child: SearchButton(
